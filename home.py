@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request
+from flask import *
 
 app: Flask = Flask(__name__)
 
@@ -19,5 +19,6 @@ def login_val():
     if email == 'jeevanath1996@gmail.com' and password == 'jvnthny1':
         return home()
 
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True)	
